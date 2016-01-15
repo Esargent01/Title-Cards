@@ -1,0 +1,18 @@
+<html ng-app="lazyLoad">
+<head>
+	<title>Lazy Load</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller="loadCtrl">
+
+	<div class="titleContainer">
+		<div class="titleCard" ng-repeat="x in contents">
+			<div class="titles lazy">{{x.title}}</div>
+			<div class="published">Published on: {{x.published}}</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
